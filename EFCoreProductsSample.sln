@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30907.101
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductModel", "ProductModel\ProductModel.csproj", "{1DD2A173-9505-49D9-A9DE-37CE15DD57A1}"
 EndProject
@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductConsoleApp", "Produc
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductWepAPI", "ProductWepAPI\ProductWepAPI.csproj", "{0952992C-9255-4822-BD09-A2289E656951}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductAPIClientLibrary", "ProductAPIClientLibrary\ProductAPIClientLibrary.csproj", "{5316B760-F6B3-46BA-8F3E-23D39E2EB6DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductAPIClientLibrary", "ProductAPIClientLibrary\ProductAPIClientLibrary.csproj", "{5316B760-F6B3-46BA-8F3E-23D39E2EB6DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiBlazorApp", "MauiBlazorApp\MauiBlazorApp.csproj", "{D3851EF2-A485-4894-B431-C5BA282EFF8D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,12 @@ Global
 		{5316B760-F6B3-46BA-8F3E-23D39E2EB6DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5316B760-F6B3-46BA-8F3E-23D39E2EB6DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5316B760-F6B3-46BA-8F3E-23D39E2EB6DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3851EF2-A485-4894-B431-C5BA282EFF8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3851EF2-A485-4894-B431-C5BA282EFF8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3851EF2-A485-4894-B431-C5BA282EFF8D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D3851EF2-A485-4894-B431-C5BA282EFF8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3851EF2-A485-4894-B431-C5BA282EFF8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3851EF2-A485-4894-B431-C5BA282EFF8D}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

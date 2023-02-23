@@ -11,7 +11,7 @@ using ViewModels;
 namespace ProductWepAPI.Controllers
 {
     [Route("[controller]")]
-    //[Authorize]
+    [Authorize]
     public class ProductsController : ControllerBase
     {
         private readonly IProduct<Product> _repository;
