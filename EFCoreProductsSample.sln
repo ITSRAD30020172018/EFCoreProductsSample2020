@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductWepAPI", "ProductWep
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductAPIClientLibrary", "ProductAPIClientLibrary\ProductAPIClientLibrary.csproj", "{5316B760-F6B3-46BA-8F3E-23D39E2EB6DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiBlazorApp", "MauiBlazorApp\MauiBlazorApp.csproj", "{D3851EF2-A485-4894-B431-C5BA282EFF8D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MauiBlazorApp", "MauiBlazorApp\MauiBlazorApp.csproj", "{D3851EF2-A485-4894-B431-C5BA282EFF8D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

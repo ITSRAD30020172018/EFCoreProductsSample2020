@@ -1,0 +1,47 @@
+﻿@page "/products"
+
+@using MauiBlazorApp.Data
+@using ProductModel
+@inject ProductService productService
+
+<h1>Weather forecast</h1>
+
+<p>This component demonstrates fetching data from a service.</p>
+
+@if (products==null)
+{
+	<p><em>Loading...</em></p>
+}
+else
+{
+	<table class="table">
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>Description</th>
+				<th>Unit Price</th>
+				<th>Sock on Hand</th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var product in products)
+			{
+				<tr>
+					<td>@product.ID</td>
+					<td>@product.Description</td>
+					<td>@product.UnitPrice</td>
+					<td>@product.StockOnHand</td>
+				</tr>
+			}
+		</tbody>
+	</table>
+}
+
+@code {
+	private List<Product> products;
+
+	protected override async Task OnInitializedAsync()
+	{
+		products = productService.GetProducts();
+	}
+}

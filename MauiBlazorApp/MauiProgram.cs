@@ -21,6 +21,7 @@ namespace MauiBlazorApp
 #endif
 
             builder.Services.AddSingleton<WeatherForecastService>();
+            builder.Services.AddTransient<ProductService>();
 
             return builder.Build();
         }
