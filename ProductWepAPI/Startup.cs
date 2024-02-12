@@ -59,8 +59,12 @@ namespace ProductWepAPI
             };
         });
 
-            services.AddDbContext<ProductDBContext>();
-            services.AddDbContext<ApplicationDbContext>();
+            services.AddDbContext<ProductDBContext>(options => {
+                options.UseSqlServer(Configuration.GetConnectionString("ProductConnectionString"));
+            }); 
+            services.AddDbContext<ApplicationDbContext>(options => {
+                options.UseSqlServer(Configuration.GetConnectionString("ProductConnectionString"));
+            });
 
             // As AddDbContext has type scoped we should Add the associated repoitory as scoped
             // Scoped For web applications, a scoped lifetime indicates that services are created once per client request

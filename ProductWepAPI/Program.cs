@@ -17,6 +17,8 @@ namespace ProductWepAPI
         public static void Main(string[] args)
         {
            var host =  CreateHostBuilder(args).Build();
+
+           // Migrations have to be used with the two contexts
            SeedDb(host);
            SeedApplicationDb(host);
            host.Run();

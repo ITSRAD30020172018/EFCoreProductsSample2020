@@ -35,7 +35,7 @@ namespace ProductWepAPI.Controllers
         }
 
         [HttpPost]
-        [Authorize]
+        //[Authorize]
         public void Post([FromBody] Product p)
         {
              _repository.Add(p);

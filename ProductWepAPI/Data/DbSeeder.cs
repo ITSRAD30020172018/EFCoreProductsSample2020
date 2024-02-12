@@ -23,7 +23,7 @@ namespace ProductSeeding
 
     public void Seed()
     {
-      // _ctx.Database.EnsureDeleted();
+      //_ctx.Database.EnsureDeleted();
       _ctx.Database.EnsureCreated();
 
       if(!_ctx.Suppliers.Any())

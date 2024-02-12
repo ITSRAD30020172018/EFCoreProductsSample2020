@@ -16,14 +16,19 @@ namespace ProductModel
         {
             
         }
-
+        public ProductDBContext(DbContextOptions<ProductDBContext> options) : base(options)
+        {
+            // Seeding to be done in Seeder after we add the context
+        }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            var myconnectionstring = "Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = ProductCoreDB";
-            optionsBuilder.UseSqlServer(myconnectionstring)
-              .LogTo(Console.WriteLine,
-                     new[] { DbLoggerCategory.Database.Command.Name },
-                     LogLevel.Information);
+            // Done from startup
+
+            //var myconnectionstring = "Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = ProductCoreDB";
+            //optionsBuilder.UseSqlServer(myconnectionstring)
+            //  .LogTo(Console.WriteLine,
+            //         new[] { DbLoggerCategory.Database.Command.Name },
+            //         LogLevel.Information);
             base.OnConfiguring(optionsBuilder);
         }
 

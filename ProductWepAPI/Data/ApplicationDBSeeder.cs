@@ -25,6 +25,7 @@ namespace ProductSeeding
         }
         public async Task Seed()
         {
+            // Migrations have to be updated as two contexts
           _ctx.Database.EnsureCreated();
                 // Seed the Main User
                 ApplicationUser user = await _userManager.FindByEmailAsync("paul@itsligo.ie");
