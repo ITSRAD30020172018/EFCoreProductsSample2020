@@ -17,8 +17,6 @@ namespace ProductWepAPI.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            //var myconnectionstring = "Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = ProductCoreDB";
-            //optionsBuilder.UseSqlServer(myconnectionstring);
 
             base.OnConfiguring(optionsBuilder);
         }

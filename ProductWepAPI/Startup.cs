@@ -110,7 +110,13 @@ namespace ProductWepAPI
             {
                 app.UseDeveloperExceptionPage();
             }
-            app.UseSwagger();
+            app.UseSwagger(options =>
+            {
+                options.SerializeAsV2 = true; // Necessary V2 serialisation to match default format on Azure Deployment
+                                              // Note default landing endpoint for Restful Web API is not a valid endpoint by design
+                                              // So swagger endpoint is https://[WebAppName].azurewebsites.net/swagger/Index.html
+            }); // See https://learn.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-8.0&tabs=visual-studio
+                // for further details;
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "ProductWepAPI v1");
